@@ -1,11 +1,11 @@
 name: "Course Schedule Updates"
 on:
-  - pull_request_target
+  - pull_request
 
 jobs:
-  example_comment_pr:
+  course-schedule:
     runs-on: ubuntu-latest
-    name: Update Course Schedule Comment
+    name: Make Course Schedule Comment
     permissions:
       pull-requests: write
     steps:
